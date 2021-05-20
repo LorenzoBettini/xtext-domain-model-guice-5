@@ -34,7 +34,7 @@
 		<moduleProperties></moduleProperties>
 		<systemProperties></systemProperties>
 		<tycho.testArgLine></tycho.testArgLine>
-		<xtextVersion>${project.version}</xtextVersion>
+		<xtextVersion>2.26.0-SNAPSHOT</xtextVersion>
 	</properties>
 	<modules>
 		<module>tp</module>
@@ -311,10 +311,34 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>sonatype-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases><enabled>false</enabled></releases>
-			<snapshots><enabled>true</enabled></snapshots>
+			<id>xtext-lib-repository</id>
+			<name>xtext-lib-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-lib/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-core-repository</id>
+			<name>xtext-core-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-core/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-extras-repository</id>
+			<name>xtext-extras-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-extras/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-maven-repository</id>
+			<name>xtext-maven-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-maven/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-xtend-repository</id>
+			<name>xtext-xtend-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-xtend/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+		</repository>
+		<repository>
+			<id>xtext-web-repository</id>
+			<name>xtext-web-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-web/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -330,8 +354,44 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-			<id>sonatype-snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>xtext-lib-plugin-repository</id>
+			<name>xtext-lib-plugin-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-lib/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-core-plugin-repository</id>
+			<name>xtext-core-plugin-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-core/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-extras-plugin-repository</id>
+			<name>xtext-extras-plugin-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-extras/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<name>xtext-maven-plugin-repository</name>
+			<id>xtext-maven-plugin-repository</id>
+			<url>https://ci.eclipse.org/xtext/job/xtext-maven/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<name>xtext-xtend-plugin-repository</name>
+			<id>xtext-xtend-plugin-repository</id>
+			<url>https://ci.eclipse.org/xtext/job/xtext-xtend/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-web-plugin-repository</id>
+			<name>xtext-web-plugin-repository</name>
+			<url>https://ci.eclipse.org/xtext/job/xtext-web/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
 			<releases><enabled>false</enabled></releases>
 			<snapshots><enabled>true</enabled></snapshots>
 		</pluginRepository>
