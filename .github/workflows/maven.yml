@@ -18,8 +18,8 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml', '**/*.yml', '**/*.target') }}
-        restore-keys: ${{ runner.os }}-m2-
+        key: ${{ runner.os }}-m2-guice5-${{ hashFiles('**/pom.xml', '**/*.yml', '**/*.target') }}
+        restore-keys: ${{ runner.os }}-m2-guice5-
     - name: Build with Maven
       run: >
         xvfb-run
