@@ -340,6 +340,11 @@
 			<name>xtext-web-repository</name>
 			<url>https://ci.eclipse.org/xtext/job/xtext-web/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
 		</repository>
+		<repository>
+			<id>xtext-mwe-repository</id>
+			<name>xtext-mwe-repository</name>
+			<url>https://ci.eclipse.org/mwe/job/mwe2/job/cd_mweGuice5Experimentb/lastSuccessfulBuild/artifact/git-repo/my-local-snapshots-dir/</url>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -392,6 +397,13 @@
 			<id>xtext-web-plugin-repository</id>
 			<name>xtext-web-plugin-repository</name>
 			<url>https://ci.eclipse.org/xtext/job/xtext-web/job/cd_guice501/lastSuccessfulBuild/artifact/build/maven-repository/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>xtext-mwe-plugin-repository</id>
+			<name>xtext-mwe-plugin-repository</name>
+			<url>https://ci.eclipse.org/mwe/job/mwe2/job/cd_mweGuice5Experimentb/lastSuccessfulBuild/artifact/git-repo/my-local-snapshots-dir/</url>
 			<releases><enabled>false</enabled></releases>
 			<snapshots><enabled>true</enabled></snapshots>
 		</pluginRepository>
